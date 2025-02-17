@@ -10,19 +10,23 @@ using System.Windows.Forms;
 
 namespace PR07
 {
-    public partial class Form1 : Form
+    public partial class FormDan : Form
     {
-        public Form1()
+        public FormDan()
         {
             InitializeComponent();
         }
 
-
         private void button1_Click(object sender, EventArgs e)
         {
-            FormDan form1 = new FormDan();
-            form1.Show(); // Показываем Form1
-            this.Hide();
+      
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            DateTime currentTime = DateTime.Now;
+
+            label1.Text = "Текущее время: " + currentTime.ToString("HH:mm:ss");
         }
     }
 }
