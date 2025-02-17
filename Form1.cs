@@ -24,5 +24,20 @@ namespace PR07
             form1.Show(); // Показываем Form1
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_DoubleClick(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
