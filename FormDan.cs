@@ -28,5 +28,12 @@ namespace PR07
 
             label1.Text = "Текущее время: " + currentTime.ToString("HH:mm:ss");
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormDan form2 = new FormDan();
+            form2.Show(); //возвращаемся на предыдущую форму
+            this.Close();
+        }
     }
 }
